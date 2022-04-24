@@ -1,0 +1,342 @@
+.d-flex {
+  @include d-flex;
+  @media only screen and (max-width: 768px) {
+    &:not(.no-responsive) {
+      display: block !important;
+    }
+    .clone-step {
+      width: 100%;
+    }
+  }
+}
+.main-box {
+  max-width: 1360px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.clone-step {
+  width: 46%;
+}
+
+.clone-line {
+  background: #9c9600;
+  width: 1px;
+  margin: 0 20px;
+}
+.align {
+  &.-center {
+    text-align: center;
+  }
+}
+.form-step {
+  @include d-flex;
+  .number {
+    width: 44px;
+    height: 44px;
+    background: #fd0352;
+    font-size: 24px;
+    color: #fff;
+    line-height: 44px;
+    text-align: center;
+  }
+  .text {
+    font-size: 24px;
+    color: inherit;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+
+.input-box {
+  margin-top: 40px;
+  select {
+    color: inherit;
+  }
+  &.-no-margin {
+    margin-top: 0px;
+  }
+  .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    .small-text {
+      font-size: 11px;
+      color: #fd0352;
+      margin-top: 5px;
+    }
+  }
+  fieldset {
+    border: 2px solid #9c9600;
+    padding: 0 26px 35px 26px;
+    border-radius: 10px;
+    legend {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 0 10px;
+    }
+  }
+  .input-area {
+    position: relative;
+    .input-data {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 110px;
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      background: #9c9600;
+      color: #fff;
+      border-radius: 0 8px 8px 0;
+      &.-large {
+        width: 150px;
+      }
+    }
+  }
+  .input {
+    width: 100%;
+    height: 56px;
+    line-height: 52px;
+    padding: 0 130px 0 20px;
+    border-radius: 10px;
+    border: 2px solid #9c9600;
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Comic";
+    &.-large {
+      padding: 0 170px 0 20px;
+    }
+    &.-no-data {
+      padding: 0 20px;
+    }
+    &::placeholder {
+      font-size: 16px;
+      font-weight: bold;
+      color: inherit;
+    }
+  }
+}
+.md-radio input[type="radio"]:checked + label:before {
+  border-color: #fd0352 !important;
+}
+.md-radio label:after {
+  background: #fd0352;
+}
+.md-radio label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.width {
+  &.width-47 {
+    width: 47%;
+  }
+  @media only screen and (max-width: 768px) {
+    &.width-47 {
+      width: 100%;
+    }
+  }
+}
+
+.overlay-slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 28px; /* Specified height */
+  background: #9c9600; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+/* Mouse-over effects */
+.overlay-slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.overlay-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 40px; /* Set a specific slider handle width */
+  height: 40px; /* Slider handle height */
+  background: #fd0352; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.overlay-slider::-moz-range-thumb {
+  width: 40px; /* Set a specific slider handle width */
+  height: 40px; /* Slider handle height */
+  background: #fd0352; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+.color-box {
+  background: #9c9600;
+  height: 60px !important;
+  padding: 0 20px !important;
+  display: flex !important;
+  border-radius: 10px;
+  margin-top: -20px;
+  position: relative;
+  width: calc(100% + 20px);
+  p {
+    color: #fff !important;
+  }
+  .color-area {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    margin-left: 10px;
+  }
+}
+.preview-button {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fd0352;
+}
+.color-picker {
+  position: absolute;
+  top: 61px;
+  z-index: 2;
+  right: 2px;
+}
+.colorPlater {
+  position: relative;
+}
+.chrome-picker {
+  min-width: 238px;
+}
+.overPicker {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.get-license {
+  padding: 20px 40px;
+  margin: 0 auto;
+  border: 0;
+  background-color: #fd0352;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Comic";
+  &.-small {
+    padding: 18px;
+    width: 100%;
+    font-size: 16px;
+  }
+  &.-green {
+    background-color: #14b745;
+  }
+}
+.color-picker-box {
+  @media only screen and (max-width: 768px) {
+    .mobile-40 {
+      margin-top: 40px;
+    }
+    label {
+      width: 100%;
+    }
+  }
+}
+.right-arrow {
+  width: 40px;
+  margin: 0 20px;
+  @media only screen and (max-width: 768px) {
+    margin: 40px 0 0 -10px;
+    transform: rotate(90deg);
+  }
+}
+.VPMainBX {
+  @media only screen and (max-width: 600px) {
+    .VPSubBX01 {
+      width: 50%;
+    }
+  }
+}
+.owl-prev {
+  color: inherit !important;
+}
+
+.final-contract {
+  margin-top: 78px;
+  border-top: 1px solid #5a5e67;
+  padding-top: 40px;
+  .small-text {
+    font-size: 11px;
+    margin-top: 5px;
+    .green {
+      color: #1caf14;
+    }
+    .red {
+      color: #fd0352;
+    }
+  }
+}
+.downloadLink {
+  color: #fd0352;
+  cursor: pointer;
+}
+.custom-check-box {
+  input {
+    visibility: hidden;
+  }
+  label {
+    display: flex;
+    font-size: 16px;
+    span {
+      position: relative;
+      display: inline-block;
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 2px solid #9c9600;
+        border-radius: 3px;
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+  }
+  input:checked ~ label span {
+    &::after {
+      content: "\f00c";
+      width: 20px;
+      height: 20px;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      top: -3px;
+      left: 4px;
+      font-size: 20px;
+      color: #fd0352;
+    }
+  }
+}
+.subdomain {
+  button {
+    font-family: inherit !important;
+  }
+}
+
+@media (max-width: 992px) {
+  footer .footerbottom .list-nav1 > li {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1rem !important;
+  }
+}
+

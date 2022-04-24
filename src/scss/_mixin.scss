@@ -1,0 +1,18 @@
+@mixin d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-flex-start {
+    justify-content: flex-start;
+  }
+  &.align-flex-start {
+    align-items: flex-start;
+  }
+}
+@mixin text-shadow($size) {
+  text-shadow: white #{$size}px #{$size}px;
+  color: rgb(132, 133, 132);
+}
