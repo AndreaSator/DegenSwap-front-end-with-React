@@ -148,7 +148,7 @@ export const Footer = ({
             </li> */}
 
 
-            <li>Powered by Atom Foundation:</li>
+            <li>shoji:</li>
             <li>
               <a href="https://smartswap.exchange/" target="_blank" >SmartSwap.exchange</a>
               <span className="column"></span>
